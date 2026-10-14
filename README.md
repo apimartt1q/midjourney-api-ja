@@ -38,83 +38,10 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations` (OpenAI-compatible
 <!-- pricing:model:start -->
 | Output | List price | Effective price |
 | --- | --- | --- |
-| default | 0.0563 | 0.04504 |
-| blend | 0.0688 | 0.05504 |
-| blend-fast | 0.0688 | 0.05504 |
-| blend-turbo | 0.125 | 0.1 |
-| describe | 0.0688 | 0.05504 |
-| describe-fast | 0.0688 | 0.05504 |
-| describe-turbo | 0.125 | 0.1 |
-| edits | 0.0688 | 0.05504 |
-| edits-fast | 0.0688 | 0.05504 |
-| edits-turbo | 0.125 | 0.1 |
-| high_variation | 0.0688 | 0.05504 |
-| high_variation-fast | 0.0688 | 0.05504 |
-| high_variation-turbo | 0.125 | 0.1 |
-| imagine | 0.0563 | 0.04504 |
-| imagine-fast | 0.0688 | 0.05504 |
-| imagine-niji6 | 0.0563 | 0.04504 |
-| imagine-niji6-fast | 0.0688 | 0.05504 |
-| imagine-niji6-turbo | 0.125 | 0.1 |
-| imagine-niji7 | 0.0563 | 0.04504 |
-| imagine-niji7-fast | 0.0688 | 0.05504 |
-| imagine-niji7-turbo | 0.125 | 0.1 |
-| imagine-turbo | 0.125 | 0.1 |
-| imagine-v5.1 | 0.0563 | 0.04504 |
-| imagine-v5.1-fast | 0.0688 | 0.05504 |
-| imagine-v5.1-turbo | 0.125 | 0.1 |
-| imagine-v5.2 | 0.0563 | 0.04504 |
-| imagine-v5.2-fast | 0.0688 | 0.05504 |
-| imagine-v5.2-turbo | 0.125 | 0.1 |
-| imagine-v6.1 | 0.0563 | 0.04504 |
-| imagine-v6.1-fast | 0.0688 | 0.05504 |
-| imagine-v6.1-turbo | 0.125 | 0.1 |
-| imagine-v7 | 0.0563 | 0.04504 |
-| imagine-v7-fast | 0.0688 | 0.05504 |
-| imagine-v7-turbo | 0.125 | 0.1 |
-| imagine-v8.1 | 0.0563 | 0.04504 |
-| imagine-v8.1-fast | 0.0688 | 0.05504 |
-| imagine-v8.1-turbo | 0.125 | 0.1 |
-| imagine-v8.2 | 0.0563 | 0.04504 |
-| imagine-v8.2-fast | 0.0688 | 0.05504 |
-| imagine-v8.2-turbo | 0.125 | 0.1 |
-| inpaint | 0.0688 | 0.05504 |
-| inpaint-fast | 0.0688 | 0.05504 |
-| inpaint-turbo | 0.125 | 0.1 |
-| low_variation | 0.0688 | 0.05504 |
-| low_variation-fast | 0.0688 | 0.05504 |
-| low_variation-turbo | 0.125 | 0.1 |
-| modal | 0.0688 | 0.05504 |
-| modal-fast | 0.0688 | 0.05504 |
-| modal-turbo | 0.125 | 0.1 |
-| pan | 0.0688 | 0.05504 |
-| pan-fast | 0.0688 | 0.05504 |
-| pan-turbo | 0.125 | 0.1 |
-| remix_strong | 0.0688 | 0.05504 |
-| remix_strong-fast | 0.0688 | 0.05504 |
-| remix_strong-turbo | 0.125 | 0.1 |
-| remix_subtle | 0.0688 | 0.05504 |
-| remix_subtle-fast | 0.0688 | 0.05504 |
-| remix_subtle-turbo | 0.125 | 0.1 |
-| reroll | 0.0688 | 0.05504 |
-| reroll-fast | 0.0688 | 0.05504 |
-| reroll-turbo | 0.125 | 0.1 |
-| shorten | 0.0688 | 0.05504 |
-| shorten-fast | 0.0688 | 0.05504 |
-| shorten-turbo | 0.125 | 0.1 |
-| upscale | 0.0688 | 0.05504 |
-| upscale-fast | 0.0688 | 0.05504 |
-| upscale-turbo | 0.125 | 0.1 |
-| variation | 0.0688 | 0.05504 |
-| variation-fast | 0.0688 | 0.05504 |
-| variation-turbo | 0.125 | 0.1 |
-| video | 0.25 | 0.2 |
-| video-720p | 0.5 | 0.4 |
-| zoom | 0.0688 | 0.05504 |
-| zoom-fast | 0.0688 | 0.05504 |
-| zoom-turbo | 0.125 | 0.1 |
+| default | $0.0375 | $0.03 |
+| 4K | $0.05 | $0.04 |
 
-
+The token-billed official route bills per million tokens instead: `text_input` $1.60, `cached_text_input` free, `image_input` $1.60, `cached_image_input` free, `text_output` $9.60, `image_output` $96.00.
 <!-- pricing:model:end -->
 
 Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-1cf971) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
